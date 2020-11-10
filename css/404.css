@@ -1,0 +1,155 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../font/Montserrat-Regular.otf);
+}
+@font-face {
+    font-family: MontserratMedium;
+    src: url(../font/Montserrat-Medium.otf);
+}
+@font-face {
+    font-family: MontserratBold;
+    src: url(../font/Montserrat-Bold.otf);
+}
+
+
+/***************************************************************/
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat";
+    background-color: #0c0c0c;
+    background: url("../img/bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    min-width: 300px;
+}
+a{
+    cursor: pointer;
+    color: #FBB351;
+    font-weight: bold;
+}
+img{
+    pointer-events: none;
+    user-select: none;
+}
+
+/***************************************************************/
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    color: #FBB351;
+}
+
+.content_404_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    padding: 60px 50px 70px 50px;
+}
+.sub_404_info_1{
+    display: block;
+    width: 100%;
+}
+.sub_404_info_1 h1{
+    font-size: 280px;
+    font-family: "MontserratBold";
+}
+.sub_404_info_1 p{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: "MontserratMedium";
+}
+.sub_404_info_2{
+    display: block;
+    width: 100%;
+}
+.sub_404_info_2 h3{
+    font-size: 50px;
+    font-family: "MontserratMedium";
+    margin-bottom: 20px;
+}
+.sub_404_info_2 p{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: "MontserratMedium";
+}
+
+.content_404_bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+._404_bg{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/********************************* RESPONSIVE *********************************/
+
+
+
+@media only screen and (max-width: 1000px){
+    .content{
+        display: block;
+        padding: 20px;
+    }
+    .content_404_info{
+        padding: 0px;
+        align-items: center;
+        text-align: center;
+    }
+    .content_404_bg{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    .content_404_info{
+        justify-content: space-around;
+    }
+    .sub_404_info_1 h1{
+        font-size: 100px;
+    }
+    .sub_404_info_1 p{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .sub_404_info_1 p{
+        font-size: 20px;
+    }
+    .sub_404_info_2 p{
+        font-size: 15px;
+    }
+    .sub_404_info_2 p br{
+        display: none;
+    }
+}
+
+
+
+/********************************* RESPONSIVE *********************************/
